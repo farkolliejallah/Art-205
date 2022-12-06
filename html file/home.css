@@ -1,0 +1,97 @@
+*{
+    margin: 0%;
+    padding:0%;
+}
+div img{
+    height: 80px;
+}
+.head{
+    height: 100px;
+    background-color:whitesmoke;
+    display:flex ;
+    align-items: center;
+}
+.head h1{
+    flex: 1;
+    color:blue;
+    font-size: 45px;
+    text-align: center;
+    font-family: Georgia;
+
+   
+}
+
+
+
+footer{
+    width: 100%;
+    height: 15rem;
+    background-color:rgb(75, 54, 3);
+}
+
+footer p{
+    color: rgb(193, 187, 187);
+    padding-bottom: 2rem;
+    font-size: 24px;
+    text-transform: capitalize;
+}
+.write{
+    text-align: justify;
+}
+
+
+.buttom{
+    background: linear-gradient(rgba(0, 0, 0, 0.644), rgba(0, 0, 0, 0.758)),
+    url(/images/pastor2.jpg.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 40rem;
+}
+
+.buttom  h1,p {
+  color: whitesmoke;
+  font-size: 1.7rem;
+  padding-bottom: 1.5rem;
+  padding-left: 15rem;
+  text-align: justify;
+}
+
+.buttom h1{
+    padding-top: 1.5rem;
+    text-align: center;
+
+}
+
+.image-grid{
+--gap:16px;
+--num-cols:4;
+--row-height:300px;
+
+box-sizing: border-box;
+padding: var(--gap);
+
+display: grid;
+grid-template-columns: repeat(var)(--num-cols), 1fr;
+grid-auto-rows: var(--row-height);
+gap: var(--gap);
+     
+}
+.image-grid-img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.image-grid-col-2{
+grid-column: span 2;
+
+}
+
+/* Anything under 1024px */ @media screen and (max-width: 1024px) {
+    .image-grid{
+        --num-cols:2;
+        --row-height:200px;
+    }
+    
+}
